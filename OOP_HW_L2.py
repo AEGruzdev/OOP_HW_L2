@@ -186,7 +186,7 @@ def medium_grades_student(list_student, course_name):
     
 
 
-#Функция для подсчета средней оценки всех студентов:
+#Функция для подсчета средней оценки всех лекторов:
 def medium_grades_lecturers(list_lecturers, course_name):
     medium_grades_list = []
     for lector in list_lecturers:
@@ -196,3 +196,7 @@ def medium_grades_lecturers(list_lecturers, course_name):
             pass
     if len(medium_grades_list) > 0:
         return f'Средняя оценка всех лекторов на курсе {course_name} равна {sum(medium_grades_list)/len(medium_grades_list)}'
+    
+
+print(medium_grades_student([student_1, student_2], 'Python'))
+print(medium_grades_lecturers([lectur_1, lectur_2], 'Python'))
